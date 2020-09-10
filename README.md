@@ -1,5 +1,8 @@
 ## Projeto Barber, baseado em um projeto que vi na rocketseat 🚀
 
+**Finalidade da Aplicação**
+
+Mudar o tema da aplicação entre tema dark e light.
 
 **Tecnologias usadas**
 - Next JS
