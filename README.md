@@ -1,7 +1,7 @@
-### Projeto Barber, baseado em um projeto feito na rocketseat 🚀
+## Projeto Barber, baseado em um projeto que vi na rocketseat 🚀
 
 
-**Tecnologias usadas **
+**Tecnologias usadas**
 - Next JS
 - React JS
 
@@ -10,6 +10,7 @@
 - React-Switch
 
 **Template**
+<br />
 <img src="./src/assets/template.png" />
 
 <br />
