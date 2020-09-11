@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 
 import { Container } from './style';
 import Switch from 'react-switch';
 
-const Home :React.FC = () => {
-    const [checked, setChecked] = useState(false)
+interface Props {
+    toggleTheme(): void;
+}
 
-    function hendleChecked() {
-        checked ? setChecked(false) : setChecked(true); 
-    }
+const Header: React.FC<Props> = ({ toggleTheme }) => {
+    const { title } = useContext(ThemeContext);
 
     return (
         <Container>
-            <Switch 
-                onChange={hendleChecked}
-                checked={checked}
+            <Switch
+                onChange={toggleTheme}
+                checked={ title === "light" }
                 offColor="#111"
                 onColor="#FFF"
                 onHandleColor="#111"
@@ -27,4 +28,4 @@ const Home :React.FC = () => {
     );
 }
 
-export default Home;
+export default Header;

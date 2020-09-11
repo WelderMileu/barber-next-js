@@ -13,7 +13,7 @@ const Global = createGlobalStyle`
   body {
       font-family: "calibri", sans-serif;
       font-size: 1.2rem;
-      background-color: #111;
+      background-color: ${ props => props.theme.colors.background.primary };
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
   }

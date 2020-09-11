@@ -11,7 +11,7 @@ export const InputPrepend = styled.div`
     left: 35px;
 
     svg {
-        fill: orange;
+        fill: ${ props => props.theme.colors.third };
     }
 `;
 
@@ -19,8 +19,8 @@ export const InputContent = styled.input`
     width: 400px;
     padding: 15px 0px 15px 80px;
     background-color: transparent;
-    color: #f1f1f1;
-    border: 1px solid #f1f1f1;
+    color: ${ props => props.theme.colors.text };
+    border: 1px solid ${ props => props.theme.colors.primary };
     border-radius: 9px;
     transition: .2s ease-in;
 

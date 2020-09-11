@@ -8,5 +8,4 @@ export const Container = styled.div`
   position: fixed;
   padding: 10px;
   padding-right: 30px;
-  /* background-color: #fff; */
 `;

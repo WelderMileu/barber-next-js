@@ -17,12 +17,12 @@ const Input: React.FC<Props> = ({ icon, type, name, placeholder }) => {
   return (
     <InputGroup>
       <InputPrepend>
-        { icon }
+        {icon}
       </InputPrepend>
       <InputContent
-        name={ name }
-        type={ type }
-        placeholder={ placeholder }
+        name={name}
+        type={type}
+        placeholder={placeholder}
       />
     </InputGroup>
   );

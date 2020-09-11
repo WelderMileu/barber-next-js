@@ -72,5 +72,8 @@
   ],
   "exclude": [
     "node_modules"
+  ],
+  "files": [
+    "./src/style/styles.d.ts"
   ]
 }

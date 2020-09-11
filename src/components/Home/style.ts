@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    color: #f1f1f1;
+    color: ${ props => props.theme.colors.text };
     display: flex;
 `;
 
@@ -21,7 +21,7 @@ export const ContainerImage = styled.div`
     height: 100vh;
     background-image: url(${ props => props.bg ? props.bg : "" });
     background-size: cover;
-    border-left: 1px solid #666;
+    border-left: 1px solid ${ props => props.theme.colors.primary };
 `;
 
 export const ButtonSubmit = styled.button`
@@ -29,9 +29,9 @@ export const ButtonSubmit = styled.button`
     padding: 13px;
     margin: 10px;
     margin-top: 30px;
-    background-color: orange;
+    background-color: ${ props => props.theme.colors.third };
     color: #fff;
-    border: 1px solid orange;
+    border: 1px solid ${ props => props.theme.colors.third };
     border-radius: 10px;
     cursor: pointer;
     transition: .2s ease-in;
@@ -40,7 +40,7 @@ export const ButtonSubmit = styled.button`
 
     &:hover {
         background-color: transparent;
-        color: orange;
+        color: ${ props => props.theme.colors.third };
     }
 `;
 
