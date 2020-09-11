@@ -15,7 +15,7 @@ export const InputPrepend = styled.div`
     }
 `;
 
-export const Input = styled.input`
+export const InputContent = styled.input`
     width: 400px;
     padding: 15px 0px 15px 80px;
     background-color: transparent;

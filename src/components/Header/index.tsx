@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Container } from './style';
 import Switch from 'react-switch';
 
-export default () => {
+const Home :React.FC = () => {
     const [checked, setChecked] = useState(false)
 
     function hendleChecked() {
@@ -26,3 +26,5 @@ export default () => {
         </Container>
     );
 }
+
+export default Home;

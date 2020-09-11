@@ -11,7 +11,7 @@ import {
 } from './style';
 import Input from '../Input';
 
-export default () => {
+const Home :React.FC = () => {
     return (
         <Container>
             <FormContainer>
@@ -45,3 +45,4 @@ export default () => {
     );
 }
 
+export default Home;

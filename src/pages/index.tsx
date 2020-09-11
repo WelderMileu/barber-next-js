@@ -4,7 +4,7 @@ import Global from '../style/global';
 import Home from '../components/Home';
 import Header from '../components/Header';
 
-export default () => {
+const App :React.FC = () => {
     return (
         <>
             <Global />
@@ -13,3 +13,5 @@ export default () => {
         </>
     )
 }
+
+export default App;
