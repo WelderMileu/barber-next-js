@@ -7,6 +7,7 @@ Mudar o tema da aplicação entre tema dark e light.
 **Tecnologias usadas**
 - Next JS
 - React JS
+- TypesScript
 
 **Plugins**
 - Styled-componets
