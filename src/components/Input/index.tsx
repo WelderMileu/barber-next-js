@@ -9,16 +9,14 @@ import {
 interface Props {
   icon: any;
   type: string;
-  name: string;
+  name?: string;
   placeholder: string;
 }
 
 const Input: React.FC<Props> = ({ icon, type, name, placeholder }) => {
   return (
     <InputGroup>
-      <InputPrepend>
-        {icon}
-      </InputPrepend>
+      <InputPrepend> {icon} </InputPrepend>
       <InputContent
         name={name}
         type={type}

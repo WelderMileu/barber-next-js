@@ -19,7 +19,7 @@ export const FormContainer = styled.div`
 export const ContainerImage = styled.div`
     width: 50%;
     height: 100vh;
-    background-image: url(${ props => props.bg ? props.bg : "" });
+    background-image: url(${require("../../assets/bg.jpeg")});
     background-size: cover;
     border-left: 1px solid ${ props => props.theme.colors.primary };
 `;

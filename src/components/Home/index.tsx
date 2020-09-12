@@ -11,13 +11,14 @@ import {
 } from './style';
 import Input from '../Input';
 
-const Home :React.FC = () => {
+
+const Home: React.FC = () => {
     return (
         <Container>
             <FormContainer>
                 <View>
-                    <Logo 
-                        src={require(`../../assets/logo.svg`)} 
+                    <Logo
+                        src={require(`../../assets/logo.svg`)}
                         alt="logo" />
                     <Input
                         type="email"
@@ -40,7 +41,7 @@ const Home :React.FC = () => {
                     Create count
                     </p>
             </FormContainer>
-            <ContainerImage bg={require(`../../assets/bg.jpeg`)} />
+            <ContainerImage />
         </Container>
     );
 }

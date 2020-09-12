@@ -9,7 +9,7 @@ import light from '../style/theme/light';
 import dark from '../style/theme/dark';
 
 const App: React.FC = () => {
-    const [theme, setTheme] = useState(light);
+    const [theme, setTheme] = useState(dark);
 
     function toggleTheme() {
         theme === light ? setTheme(dark) : setTheme(light);
