@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaEnvelope, FaUnlockAlt } from 'react-icons/fa';
+import { ThemeContext } from 'styled-components';
 
 import {
     Container,
@@ -13,12 +14,14 @@ import Input from '../Input';
 
 
 const Home: React.FC = () => {
+    const { title } = useContext(ThemeContext)
+
     return (
         <Container>
             <FormContainer>
                 <View>
                     <Logo
-                        src={require(`../../assets/logo.svg`)}
+                        src={ title === "dark" ? require(`../../assets/logo.svg`) : require(`../../assets/logo2.svg`) }
                         alt="logo" />
                     <Input
                         type="email"
